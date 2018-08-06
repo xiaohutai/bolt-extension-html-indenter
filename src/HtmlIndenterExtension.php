@@ -69,7 +69,9 @@ class HtmlIndenterExtension extends SimpleExtension
             return $this->minifyHtml($html);
         }
 
-        $indenter = new Indenter( $config['indentation_character'] );
+        $indenter = new Indenter([
+            'indentation_character' => $config['indentation_character']
+        ]);
 
         foreach ($config['blocks'] as $element) {
             $indenter->setElementType($element, Indenter::ELEMENT_TYPE_BLOCK);
