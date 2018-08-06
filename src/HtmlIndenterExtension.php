@@ -19,18 +19,11 @@ class HtmlIndenterExtension extends SimpleExtension
      */
     protected function subscribe(EventDispatcherInterface $dispatcher)
     {
-        /*
-        // Only when debug is OFF
-        $app = $this->getContainer();
-        $config = $app['config'];
-        $debug = $config->get('general/debug');
+        $config = $this->getConfig();
 
-        if (! $debug) {
-            $dispatcher->addListener(KernelEvents::RESPONSE, [$this, 'onKernelResponse']);
+        if ($config['enabled']) {
+            $dispatcher->addListener(KernelEvents::RESPONSE, [ $this, 'onKernelResponse' ]);
         }
-        //*/
-
-        $dispatcher->addListener(KernelEvents::RESPONSE, [ $this, 'onKernelResponse' ]);
     }
 
     /**
