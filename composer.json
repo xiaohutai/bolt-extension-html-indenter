@@ -24,7 +24,8 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Bolt\\Extension\\XiaoHuTai\\HtmlIndenter\\": "src"
+            "Bolt\\Extension\\XiaoHuTai\\HtmlIndenter\\": "src",
+            "Gajus\\Dindent\\": "lib/gajus/dindent/src/"
         }
     },
     "extra": {

@@ -3,15 +3,6 @@
 A simple extension that properly indents HTML responses.
 
 
-## Installation
-
-Before installing this extension. You need to install [gajus/dindent](https://github.com/gajus/dindent):
-
-```sh
-composer require gajus/dindent
-```
-
-
 ## Configuration
 
 Edit `app/config/extension/htmlindenter.xiaohutai.yml` for options:
